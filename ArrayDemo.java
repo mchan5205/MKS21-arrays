@@ -2,7 +2,10 @@ public class ArrayDemo{
     public static void main(String[] args){	
 		int[] array = new int[5];
 		printArray(array);
-		int[][] array2 = new int[3][3];
+		int[][] array2 = new int[][]{
+			{1, 2, 3, 4},
+			{5, 6, 7, 8},
+		};	
 		printArray(array2);
 		System.out.print(countZeros2D(array2));
 	}
@@ -27,5 +30,8 @@ public class ArrayDemo{
 			}	
 		}
 		return count;
+	}
+	public static void fill2D(int[][] vals){
+		
 	}	
 }	
